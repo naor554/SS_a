@@ -22,14 +22,17 @@ void CreateMatrix(){
             }
          }
      }
+     for (int i = 0; i < 10; i++) {
+        Matrix[i][i] = 0;
+    }
 }
 
 
 void IsTherePath(int i, int j){
     if(Matrix[i][j] != 0){
-        printf("True\n");
+        printf("True");
     }else{
-        printf("False\n");
+        printf("False");
     }
 }
 
