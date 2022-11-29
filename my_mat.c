@@ -7,12 +7,10 @@ void CreateMatrix(){
     for (int i = 0; i < 10; i++){
         for (int j = 0; j < 10; j++){
             int num;
-            printf("insert value\n");
             scanf("%d", &num);
             Matrix[i][j] = num;
         }
     }
-    printf("The Matrix is Full\n");
     for (int k = 0; k < 10; k++) {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
@@ -37,9 +35,9 @@ void IsTherePath(int i, int j){
 
 void ShortestPath(int i, int j){
     if(Matrix[i][j] == 0){
-        printf("-1\n");
+        printf("-1");
     }else{
-        printf("%d\n" , Matrix[i][j]);
+        printf("%d" , Matrix[i][j]);
     }
 }
 
