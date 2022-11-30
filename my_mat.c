@@ -29,15 +29,15 @@ void CreateMatrix(){
 
 
 void IsTherePath(int i, int j){
-    if(Matrix[i][j] != 0){
-        printf("True");
-    }else{
+    if(i == j || Matrix[i][j] == 0){
         printf("False");
+    }else{
+        printf("True");
     }
 }
 
 void ShortestPath(int i, int j){
-    if(Matrix[i][j] == 0){
+    if(i == j || Matrix[i][j] == 0){
         printf("-1");
     }else{
         printf("%d" , Matrix[i][j]);
