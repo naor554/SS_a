@@ -30,17 +30,17 @@ void CreateMatrix(){
 
 void IsTherePath(int i, int j){
     if(i == j || Matrix[i][j] == 0){
-        printf("False");
+        printf("False\n");
     }else{
-        printf("True");
+        printf("True\n");
     }
 }
 
 void ShortestPath(int i, int j){
     if(i == j || Matrix[i][j] == 0){
-        printf("-1");
+        printf("-1\n");
     }else{
-        printf("%d" , Matrix[i][j]);
+        printf("%d\n" , Matrix[i][j]);
     }
 }
 
